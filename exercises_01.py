@@ -31,13 +31,16 @@ pattern = r'https?://[^\s\'"]+'
 match = re.findall(pattern, content)
 
 
-# for i in match:
-#     print(i)
+for i in match:
+    print(i)
 
 
-# with open('link_list.txt', 'w') as file:
-#     for link in match:
-#         file.write(link + '\n')
+with open('link_list.txt', 'w') as file:
+    for link in match:
+        file.write(link + '\n')
+
+
+#####
 
 web_site = "https://es.wikipedia.org/wiki/N%C3%BAmero_de_tel%C3%A9fono"
 
